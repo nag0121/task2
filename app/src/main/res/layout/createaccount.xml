@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tv_ca_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create account"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_below="@+id/tv_ca_create"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_fn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="first name :"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/et_fn_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_ln_create"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="last name :"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/et_ln_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_phone_create"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="phone no :"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/et_phone_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_pw_create"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="create pw :"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/et_pw_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                />
+        </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <RadioButton
+                android:id="@+id/rb_m_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male"/>
+            <RadioButton
+                android:id="@+id/rb_fm_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cA_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="create account" />
+
+
+
+    </TableLayout>
+</RelativeLayout>

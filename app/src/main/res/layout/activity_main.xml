@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.task.MainActivity"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_logF_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG-iN"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/btn_login_main"
+        android:background="@drawable/layoutbackground">
+
+        <EditText
+            android:id="@+id/et_id_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter name"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/acc"
+            android:layout_above="@+id/et_pw_main"/>
+
+        <EditText
+            android:id="@+id/et_pw_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter password"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/visibilityoff"
+            android:inputType="textPassword"
+            android:layout_above="@+id/btn_login_main"/>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log-in"
+            android:background="@drawable/buttonbackground"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/btn_cA_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create Accout"
+            android:background="@drawable/buttonbackground"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btn_login_main"
+            android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
